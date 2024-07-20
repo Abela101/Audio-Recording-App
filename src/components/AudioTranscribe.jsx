@@ -103,7 +103,7 @@ export default function AudioTranscribe() {
         <div className="relative flex flex-col items-center">
           <input
             type="text"
-            placeholder={recording ? `Recording ${Math.floor(recordingTime / 60)}:${recordingTime % 60}` : 'Click to Start Recording'}
+            placeholder={recording ? `Recording ${Math.floor(recordingTime / 60)}:${recordingTime % 60}` : 'Click to Start Record'}
             className={`border border-gray-300 p-2 pl-4 pr-12 rounded-md text-left text-xl w-64 cursor-pointer ${recording ? 'bg-red-100' : ''}`}
             readOnly
             onClick={startRecording}
